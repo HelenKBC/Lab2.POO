@@ -13,6 +13,9 @@ namespace Lab2.POO.Entity
             public decimal Total { get; set; }
             public List<Compra> Compras { get; set; }
             public List<Venta> Ventas { get; set; }
-       
+            public void GuardarFactura()
+            {
+
+            }
     }
 }
