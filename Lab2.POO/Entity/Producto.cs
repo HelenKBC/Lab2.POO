@@ -18,8 +18,6 @@ namespace Lab2.POO.Entity
         public string CodigoProducto { get; set; }
         public CategoriaProducto CategoriaProducto { get; set; }
         public Marca Marca { get; set; }
-        public List<Compra> Compras { get; set; }
-        public List<Venta> Ventas { get; set; }
 
         public void ActualizarStock(int cantidad)
         {
