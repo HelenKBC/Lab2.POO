@@ -15,6 +15,16 @@ namespace Lab2.POO.Entity
             public string Telefono { get; set; }
             public string NIT { get; set; }
             public string NRC { get; set; }
-        
+
+        public void RealizarCompra(Producto producto, int cantidad)
+        {
+            
+        }
+
+        public void RealizarPago(Factura factura)
+        {
+           
+        }
     }
+
 }

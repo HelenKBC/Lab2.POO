@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab2.POO.Entity
 {
-    public class Compra
+    public class Venta
     {
         public int NumeroFactura { get; set; }
-        public string ProductoAComprar { get; set; }
+        public string ProductoAVender { get; set; }
         public decimal Precio { get; set; }
         public int Cantidad { get; set; }
         public string NombreCliente { get; set; }
-        public DateTime FechaCompra { get; set; }
+        public DateTime FechaVenta { get; set; }
         public Producto Producto { get; set; }
         public Factura Factura { get; set; }
 
