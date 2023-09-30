@@ -17,7 +17,11 @@ namespace Lab2.POO.Entity
 
         public void AbastecerInventario(Producto producto, int cantidad)
         {
-           
+            // Actualizar el inventario del producto
+            producto.ActualizarStock(cantidad);
+
+            // Registrar la compra o abastecimiento en alguna base de datos o sistema
+            Console.WriteLine("Se abasteció el inventario con " + cantidad + " unidades de " + producto.Nombre);
         }
     }
 }

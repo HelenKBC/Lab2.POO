@@ -21,7 +21,16 @@ namespace Lab2.POO.Entity
 
         public void ActualizarStock(int cantidad)
         {
-            
+            // Verificar que la cantidad sea positiva si se trata de una compra,
+            // o negativa si es una venta
+            if (cantidad > 0 || (cantidad < 0 && this.Stock >= Math.Abs(cantidad)))
+            {
+                this.Stock += cantidad;
+            }
+            else
+            {
+                Console.WriteLine("No se puede actualizar el stock debido a una cantidad no válida.");
+            }
         }
     }
 }
