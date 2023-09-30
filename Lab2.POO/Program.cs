@@ -10,6 +10,7 @@ namespace Lab2.POO
     {
         static void Main(string[] args)
         {
+            ///Hola
         }
     }
 }
