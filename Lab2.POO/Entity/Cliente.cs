@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2.POO
+namespace Lab2.POO.Entity
 {
-    internal class Program
+    internal class Cliente
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }
