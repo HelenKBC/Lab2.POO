@@ -15,6 +15,9 @@ namespace Lab2.POO.Entity
         public string Telefono { get; set; }
         public string NIT { get; set; }
         public string NRC { get; set; }
+        public List<Compra> Compras { get; set; }
+        public List<Venta> Ventas { get; set; }
+       
 
         public void RealizarCompra(Producto producto, int cantidad)
         {
@@ -33,7 +36,6 @@ namespace Lab2.POO.Entity
 
                 // Generar la factura y realizar el pago
                 compra.GenerarFactura();
-                this.RealizarPago(compra.Factura);
 
                 // Actualizar el inventario
                 producto.ActualizarStock(-cantidad);
@@ -46,7 +48,9 @@ namespace Lab2.POO.Entity
 
         public void RealizarPago(Factura factura)
         {
-            Console.WriteLine("Se realizó el pago de la factura #" + factura.NumeroFactura);
+            Console.WriteLine("Se realizó el pago de la factura el cliente " + Nombres + " " + Apellidos);
+
         }
     }
+
 }

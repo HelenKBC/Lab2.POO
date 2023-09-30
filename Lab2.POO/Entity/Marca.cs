@@ -12,9 +12,6 @@ namespace Lab2.POO.Entity
             public string Nombre { get; set; }
             public List<Producto> Productos { get; set; }
            
-            public void GuardarMarca()
-            {
-
-            }
+           
     }
 }

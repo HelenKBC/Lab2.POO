@@ -11,9 +11,5 @@ namespace Lab2.POO.Entity
             public int Id { get; set; }
             public string Nombre { get; set; }
             public List<Producto> Productos { get; set; }
-        public void GuardarCategoriaProducto()
-        {
-
-        }
     }
 }

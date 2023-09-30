@@ -18,11 +18,11 @@ namespace Lab2.POO.Entity
         public string CodigoProducto { get; set; }
         public CategoriaProducto CategoriaProducto { get; set; }
         public Marca Marca { get; set; }
+        public List<Compra> Compras { get; set; }
+        public List<Venta> Ventas { get; set; }
 
         public void ActualizarStock(int cantidad)
         {
-            // Verificar que la cantidad sea positiva si se trata de una compra,
-            // o negativa si es una venta
             if (cantidad > 0 || (cantidad < 0 && this.Stock >= Math.Abs(cantidad)))
             {
                 this.Stock += cantidad;

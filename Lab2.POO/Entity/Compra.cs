@@ -19,7 +19,18 @@ namespace Lab2.POO.Entity
 
         public void GenerarFactura()
         {
-            
+            List<Factura> factura = new List<Factura>();
+                factura.Add(new Factura { 
+                NumeroFactura =+1,
+                FechaEmision = DateTime.Now,
+                Total = Precio * Cantidad
+            });
+            Factura.Facturas = factura;
+        }
+
+        public void ActualizarInventario()
+        {
+            // Lógica para actualizar el inventario después de una compra
         }
     }
 }
